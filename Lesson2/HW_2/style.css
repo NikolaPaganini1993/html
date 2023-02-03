@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Dandelion Lines';
+	src: url('../fonts/dandelion_lines.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/dandelion_lines.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/dandelion_lines.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/dandelion_lines.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/dandelion_lines.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/dandelion_lines.svg#dandelion_lines') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body {
+    text-align: center;
+    background-color: rgb(179, 196, 191);
+}
+h1 {
+    font-family: 'Dandelion Lines', sans-serif;
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 40px;
+}
+ul {
+    text-align: left;
+}
+ol {
+    text-align: left;
+}

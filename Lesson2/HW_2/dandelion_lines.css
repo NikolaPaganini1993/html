@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Dandelion Lines';
+	src: url('../fonts/dandelion_lines.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/dandelion_lines.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/dandelion_lines.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/dandelion_lines.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/dandelion_lines.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/dandelion_lines.svg#dandelion_lines') format('svg'); /* Chrome < 4, Legacy iOS */
+}
