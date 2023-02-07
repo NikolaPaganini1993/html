@@ -1,23 +1,23 @@
 <?php
-$job = [
+$jobs = [
     [
-        'name' => 'Тестировщик',
-        'start' => 'Nov 2022'
-        'finish' => 'Current'
-        'description' => 'Описание работы тестировщика'
+        "name" => "Тестировщик",
+        "start" => "Ноябрь 2022",
+        "finish" => "По настоящее время",
+        "description" => "Описание работы тестировщика",
         
     ],
     [
-        'name' => 'Аналитик',
-        'start' => 'Sen 2022'
-        'finish' => 'Feb 2023'
-        'description' => 'Описание работы аналитика'
+        "name" => "Аналитик",
+        "start" => "Сентябрь 2022",
+        "finish" => "Февраль 2023",
+        "description" => "Описание работы аналитика",
     ],
     [
-        'name' => 'Разработчик',
-        'start' => 'Oct 2022'
-        'finish' => 'Feb 2023'
-        'description' => 'Описание работы разработчика'
+        "name" => "Предприниматель",
+        "start" => "Октябрь 2018",
+        "finish" => "Декабрь 2022",
+        "description" => "Описание работы предпринимателя",
 
     ],
 ];
@@ -115,26 +115,24 @@ $job = [
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
               class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-            <?php for ($i = 0; $i < count($job); $i++):?>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b><?php echo $job[$i]['name']; ?></b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job[$i]['start']; ?> - <span
-                        class="w3-tag w3-teal w3-round"><?php echo $job[$i]['finish']; ?></span></h6>
-                    <p><?php echo $job[$i]['description']; ?></p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b><?php echo $job[$i]['name']; ?></b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job[$i]['start']; ?> - <?php echo $job[$i]['finish']; ?></h6>
-                    <p><?php echo $job[$i]['description']; ?></p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b><?php echo $job[$i]['name']; ?></b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job[$i]['start']; ?> - <?php echo $job[$i]['finish']; ?></h6>
-                    <p><?php echo $job[$i]['description']; ?></p><br>
-                </div>
-            <?php endfor;?>
+          <?php for ($i = 0; $i < count($jobs); $i++): ?>   
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b><?php echo $jobs[$i]['name']; ?></b></h5>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                <?php echo $jobs[$i]['start']; ?> - 
+                <?php if($i == 0): ?>
+                  <span class="w3-tag w3-teal w3-round">
+                    <?php echo $jobs[$i]['finish']; ?>
+                  </span>
+                <?php else: ?>
+                  <?php echo$jobs[$i]['finish'];?>
+                <?php endif; ?>
+              </h6>
+              <p><?php echo $jobs[$i]['description']; ?></p>
+              <hr>
+            </div>
+          <?php endfor; ?>
         </div>
  
         <div class="w3-container w3-card w3-white">
